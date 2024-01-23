@@ -11,8 +11,6 @@ body {
     padding: 10px;
     font-size: 20px;
     text-align: center;
-    max-width: 80%; /* Limite la largeur du conteneur à 80% de la largeur de l'écran */
-
 }
 
 /* Styles pour l'en-tête et la section des émoticônes */
