@@ -4,7 +4,7 @@ body {
 
 .bodytext {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: black;
     padding: 50px;
     font-size: 30px;
 }
@@ -30,7 +30,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 75px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .emoji {
