@@ -47,7 +47,6 @@ body {
 /* Styles pour les émoticônes */
 .emoji {
     padding: 0.5em;
-    width: 50px;
     margin: 5px;
     font-size: 60px;
     transition: transform 0.1s ease-in-out;
@@ -57,4 +56,18 @@ body {
 /* Effet de zoom au survol des émoticônes */
 .emoji:hover {
     transform: scale(1.2, 1.2);
+}
+
+/* Styles spécifiques pour les tablettes (landscape) et les écrans plus grands */
+@media (min-width: 768px) {
+    .wrapper-emoji {
+        flex-direction: row; /* Alignement horizontal des émoticônes sur tablette et écran plus grand */
+    }
+}
+
+/* Styles spécifiques pour les écrans de petite taille (mobile) */
+@media (max-width: 767px) {
+    .emoji {
+        font-size: 30px; /* Taille réduite pour les émoticônes sur mobile */
+    }
 }
