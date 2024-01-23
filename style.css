@@ -8,7 +8,7 @@ body {
 .bodytext {
     font-family: 'Comfortaa', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     text-align: center;
 }
@@ -20,6 +20,8 @@ body {
     align-items: center;
     justify-content: center; /* Centrage vertical des éléments */
     height: 100vh; /* Hauteur égale à 100% de la vue pour centrer verticalement */
+    margin-top: 10px; /* Ajout de la marge en haut pour réduire l'espace */
+
 }
 
 /* Styles pour les boutons */
@@ -42,12 +44,14 @@ body {
     text-align: center;
     color: black;
     margin-top: 10px;
+    margin-bottom: 10px; /* Ajout de la marge en bas pour réduire l'espace */
+
 }
 
 /* Styles pour les émoticônes */
 .emoji {
-    padding: 0.5em;
-    margin: 5px;
+    padding: 0.2em; /* Réduction de la valeur du padding pour réduire l'espace */
+    margin: 3px; /* Réduction de la marge pour réduire l'espace */
     font-size: 60px;
     transition: transform 0.1s ease-in-out;
     transform-origin: center center;
