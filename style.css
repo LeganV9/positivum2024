@@ -1,25 +1,28 @@
 body {
     background-color: hsla(122, 100%, 50%, 0.5);
+    margin: 0; /* Ajout de margin: 0 pour éviter les marges par défaut du body */
 }
 
 .bodytext {
     font-family: 'Comfortaa', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    padding: 50px;
-    font-size: 30px;
+    padding: 20px; /* Réduction de la valeur du padding pour un espacement plus modéré */
+    font-size: 20px; /* Réduction de la taille de police pour une meilleure lisibilité sur les petits écrans */
+    text-align: center;
 }
 
 .header, .wrapper-emoji {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Utilisation de la disposition en colonne sur les petits écrans */
+    align-items: center; /* Centrage des éléments */
 }
 
 .button {
     border: 5px white solid;
-    display: inline;
+    display: inline-block; /* Changement pour inline-block pour mieux s'adapter à la largeur du contenu */
     padding: 1em;
     border-radius: 15px;
-    width: 75px;
+    width: auto; /* Utilisation de la largeur automatique pour s'adapter au contenu */
     margin: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -28,20 +31,21 @@ body {
 
 .title {
     font-family: 'Comfortaa', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 75px;
+    font-size: 50px; /* Réduction de la taille de police pour une meilleure adaptation aux petits écrans */
     text-align: center;
     color: black;
+    margin-top: 10px; /* Ajout d'une marge supérieure pour un meilleur espacement */
 }
 
 .emoji {
-    padding: 1em;
-    width: 75px;
-    margin: 10px;
-    font-size: 100px;
+    padding: 0.5em; /* Réduction de la valeur du padding pour un espacement plus modéré */
+    width: 50px; /* Réduction de la taille des émoticônes pour une meilleure adaptation */
+    margin: 5px; /* Réduction de la marge pour un espacement plus modéré */
+    font-size: 60px; /* Réduction de la taille de police pour une meilleure adaptation */
     transition: transform 0.1s ease-in-out;
     transform-origin: center center;
 }
 
 .emoji:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.2, 1.2); /* Ajustement de l'échelle au survol pour une animation plus modérée */
 }
