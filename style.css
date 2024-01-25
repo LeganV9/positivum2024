@@ -6,7 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
 }
 
 /* Styles pour le texte principal */
@@ -24,7 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Centrage vertical des éléments */
-    max-width: 80%; /* Limite la largeur du conteneur à 80% de la largeur de l'écran */
+    max-width: 400px; /* Limite la largeur du conteneur à 80% de la largeur de l'écran */
     margin: 0 auto; /* Centre le conteneur horizontalement */
     height: auto; /* Ajuste la hauteur automatiquement en fonction du contenu */
     margin-top: 10px; /* Ajout de la marge en haut pour réduire l'espace */
