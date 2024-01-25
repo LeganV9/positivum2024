@@ -2,6 +2,11 @@
 body {
     background-color: hsla(122, 100%, 50%, 0.5);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 /* Styles pour le texte principal */
@@ -23,7 +28,8 @@ body {
     margin: 0 auto; /* Centre le conteneur horizontalement */
     height: auto; /* Ajuste la hauteur automatiquement en fonction du contenu */
     margin-top: 10px; /* Ajout de la marge en haut pour réduire l'espace */
-
+    width: 100%; /* Occupy the full width */
+    text-align: center;
 }
 
 /* Styles pour les boutons */
