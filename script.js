@@ -1,28 +1,19 @@
-fetch("liste-bad.html")
-  .then(response => response.text())
-  .then(html => {
-    const documentHtml = new DOMParser().parseFromString(html, "text/html");
-    const listePhrasesBad = documentHtml.getElementById("liste-bad");
-
-    // Vous pouvez maintenant accéder à la liste des phrases
-    console.log(listePhrasesBad.children);
-  });
-
+const listePhrasesBad = [
+  "Challenges are what make life interesting. Overcoming them is what makes life meaningful. - Joshua J. Marine",
+  // Ajoute d'autres citations négatives ici
+];
 
 function afficherPhraseAleatoire() {
-  const listePhrasesBad = document.getElementById("liste-bad");
-  const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.children.length);
-  const phraseAleatoire = listePhrasesBad.children[nombreAleatoire].textContent;
+  const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.length);
+  const phraseAleatoire = listePhrasesBad[nombreAleatoire];
 
   // Affichez la phrase aléatoire
   alert(phraseAleatoire);
 }
 
-
-
 // Utiliser fetch pour charger le contenu de header.html
 fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('headerContainer').innerHTML = data;
-    });
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('headerContainer').innerHTML = data;
+  });
