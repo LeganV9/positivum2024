@@ -23,7 +23,6 @@ body {
 /* Styles pour l'en-tête et la section des émoticônes */
 .header, .wrapper-emoji {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center; /* Centrage vertical des éléments */
     max-width: 60%; /* Limite la largeur du conteneur à 80% de la largeur de l'écran */
