@@ -13,3 +13,12 @@ bouton.addEventListener("click", function() {
   const elementTexte = document.getElementById("texte-selectionne");
   elementTexte.textContent = phrase;
 });
+
+
+
+// Utiliser fetch pour charger le contenu de header.html
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('headerContainer').innerHTML = data;
+    });
