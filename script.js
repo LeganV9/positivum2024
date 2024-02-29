@@ -1,11 +1,11 @@
-fetch("fichier.html")
+fetch("liste-bad.html")
   .then(response => response.text())
   .then(html => {
     const documentHtml = new DOMParser().parseFromString(html, "text/html");
-    const listePhrases = documentHtml.getElementById("liste-phrases");
+    const listePhrasesBad = documentHtml.getElementById("liste-bad");
 
     // Vous pouvez maintenant accéder à la liste des phrases
-    console.log(listePhrases.children);
+    console.log(listePhrasesBad.children);
   });
 
 
