@@ -2,8 +2,8 @@ const listePhrasesBad = document.getElementById("liste-bad");
 const boutonBad = document.getElementById("bouton-bad");
 
 bouton.addEventListener("click", function() {
-  const nombreAleatoire = Math.floor(Math.random() * listePhrases.children.length);
-  const phraseAleatoire = listePhrases.children[nombreAleatoire].textContent;
+  const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.children.length);
+  const phraseAleatoire = listePhrasesBad.children[nombreAleatoire].textContent;
 
   // Affichez la phrase aléatoire
   alert(phraseAleatoire);
