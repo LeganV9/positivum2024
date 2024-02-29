@@ -1,5 +1,8 @@
 const listePhrasesBad = [
   "Challenges are what make life interesting. Overcoming them is what makes life meaningful. - Joshua J. Marine",
+  "je vais te faire l'amour chérie",
+  "je vais te faire un bisou chérie",
+
   // Ajoute d'autres citations négatives ici
 ];
 
