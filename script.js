@@ -1,5 +1,5 @@
-const listePhrases = document.getElementById("liste-phrases");
-const bouton = document.getElementById("mon-bouton");
+const listePhrasesBad = document.getElementById("liste-bad");
+const boutonBad = document.getElementById("bouton-bad");
 
 bouton.addEventListener("click", function() {
   const nombreAleatoire = Math.floor(Math.random() * listePhrases.children.length);
