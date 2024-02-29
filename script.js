@@ -1,17 +1,17 @@
+const listePhrases = document.getElementById("liste-phrases");
 const bouton = document.getElementById("mon-bouton");
 
 bouton.addEventListener("click", function() {
-  const elementLi = event.target.parentNode;
-  const index = elementLi.parentNode.children.indexOf(elementLi);
-  const phrase = elementLi.textContent;
+  const nombreAleatoire = Math.floor(Math.random() * listePhrases.children.length);
+  const phraseAleatoire = listePhrases.children[nombreAleatoire].textContent;
 
-  // Affichez la phrase sélectionnée
-  alert(phrase);
-  console.log(phrase);
+  // Affichez la phrase aléatoire
+  alert(phraseAleatoire);
+  console.log(phraseAleatoire);
 
   // Optionnel : afficher la phrase dynamiquement
   const elementTexte = document.getElementById("texte-selectionne");
-  elementTexte.textContent = phrase;
+  elementTexte.textContent = phraseAleatoire;
 });
 
 
