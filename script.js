@@ -10,7 +10,7 @@ fetch("liste-bad.html")
 
 
 function afficherPhraseAleatoire() {
-  const listePhrasesBad = document.getElementById("liste-bad);
+  const listePhrasesBad = document.getElementById("liste-bad");
   const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.children.length);
   const phraseAleatoire = listePhrasesBad.children[nombreAleatoire].textContent;
 
