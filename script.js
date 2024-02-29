@@ -1,3 +1,14 @@
+fetch("fichier.html")
+  .then(response => response.text())
+  .then(html => {
+    const documentHtml = new DOMParser().parseFromString(html, "text/html");
+    const listePhrases = documentHtml.getElementById("liste-phrases");
+
+    // Vous pouvez maintenant accéder à la liste des phrases
+    console.log(listePhrases.children);
+  });
+
+
 function afficherPhraseAleatoire() {
   const listePhrasesBad = document.getElementById("liste-bad);
   const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.children.length);
