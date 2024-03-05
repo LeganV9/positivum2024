@@ -1,14 +1,14 @@
 function afficherPhraseAleatoireBad() {
   const nombreAleatoireBad = Math.floor(Math.random() * listePhrasesBad.length);
-  const phraseAleatoireBad = listePhrasesBad[nombreAleatoire];
+  const phraseAleatoireBad = listePhrasesBad[nombreAleatoireBad];
 
 function afficherPhraseAleatoireNeutral() {
   const nombreAleatoireNeutral = Math.floor(Math.random() * listePhrasesNeutral.length);
-  const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoire];
+  const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoireNeutral];
 
 function afficherPhraseAleatoirePositive() {
   const nombreAleatoirePositive = Math.floor(Math.random() * listePhrasesPositive.length);
-  const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoire];
+  const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoirePositive];
 
   // Affichez la phrase aléatoire Bad
   alert(phraseAleatoireBad);
