@@ -52,7 +52,7 @@ function afficherPhraseAleatoirePositive() {
 
   // Affichez la phrase aléatoire
   alert(phraseAleatoire);
-}
+};
 
 // Utiliser fetch pour charger le contenu de header.html
 fetch('header.html')
