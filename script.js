@@ -1,3 +1,27 @@
+function afficherPhraseAleatoireBad() {
+  const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.length);
+  const phraseAleatoireBad = listePhrasesBad[nombreAleatoire];
+
+function afficherPhraseAleatoireNeutral() {
+  const nombreAleatoire = Math.floor(Math.random() * listePhrasesNeutral.length);
+  const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoire];
+
+function afficherPhraseAleatoirePositive() {
+  const nombreAleatoire = Math.floor(Math.random() * listePhrasesPositive.length);
+  const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoire];
+
+  // Affichez la phrase aléatoire Bad
+  alert(phraseAleatoireBad);
+};
+
+// Affichez la phrase aléatoire Neutral
+  alert(phraseAleatoireNeutral);
+};
+
+// Affichez la phrase aléatoire Positive
+  alert(phraseAleatoirePositive);
+};
+
 const listePhrasesBad = [
   "Challenges are what make life interesting. Overcoming them is what makes life meaningful. - Joshua J. Marine",
   "The only place where success comes before work is in the dictionary. - Vidal Sassoon",
@@ -36,31 +60,6 @@ const listePhrasesPositive = [
   "Life is made of fleeting opportunities seized by bold minds. - Unknown",
   "Success is the key to happiness. If you love what you are doing, you will be successful. - Albert Schweitzer"
 ];
-
-
-function afficherPhraseAleatoireBad() {
-  const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.length);
-  const phraseAleatoireBad = listePhrasesBad[nombreAleatoire];
-
-function afficherPhraseAleatoireNeutral() {
-  const nombreAleatoire = Math.floor(Math.random() * listePhrasesNeutral.length);
-  const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoire];
-
-function afficherPhraseAleatoirePositive() {
-  const nombreAleatoire = Math.floor(Math.random() * listePhrasesPositive.length);
-  const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoire];
-
-  // Affichez la phrase aléatoire Bad
-  alert(phraseAleatoireBad);
-};
-
-// Affichez la phrase aléatoire Neutral
-  alert(phraseAleatoireNeutral);
-};
-
-// Affichez la phrase aléatoire Positive
-  alert(phraseAleatoirePositive);
-};
 
 // Utiliser fetch pour charger le contenu de header.html
 fetch('header.html')
