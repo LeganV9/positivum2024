@@ -40,18 +40,26 @@ const listePhrasesPositive = [
 
 function afficherPhraseAleatoireBad() {
   const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.length);
-  const phraseAleatoire = listePhrasesBad[nombreAleatoire];
+  const phraseAleatoireBad = listePhrasesBad[nombreAleatoire];
 
 function afficherPhraseAleatoireNeutral() {
   const nombreAleatoire = Math.floor(Math.random() * listePhrasesNeutral.length);
-  const phraseAleatoire = listePhrasesNeutral[nombreAleatoire];
+  const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoire];
 
 function afficherPhraseAleatoirePositive() {
   const nombreAleatoire = Math.floor(Math.random() * listePhrasesPositive.length);
-  const phraseAleatoire = listePhrasesPositive[nombreAleatoire];
+  const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoire];
 
-  // Affichez la phrase aléatoire
-  alert(phraseAleatoire);
+  // Affichez la phrase aléatoire Bad
+  alert(phraseAleatoireBad);
+};
+
+// Affichez la phrase aléatoire Neutral
+  alert(phraseAleatoireNeutral);
+};
+
+// Affichez la phrase aléatoire Positive
+  alert(phraseAleatoirePositive);
 };
 
 // Utiliser fetch pour charger le contenu de header.html
