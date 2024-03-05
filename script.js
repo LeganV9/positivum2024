@@ -24,6 +24,20 @@ const listePhrasesNeutral = [
   "Don't look back, you're not going that way. - Unknown"
   ];
 
+const listePhrasesPositive = [
+  "Perseverance is not a long race; it's a lot of short races one after the other. - Walter Elliot",
+  "Don't worry that the world owes you something. It owes you nothing. It was here before you. - Mark Twain",
+  "It's during our darkest moments that we must focus to see the light. - Aristotle Onassis",
+  "Success is going from failure to failure without losing your enthusiasm. - Winston Churchill",
+  "It's in our decisions that our destiny is shaped. - Tony Robbins",
+  "People who succeed have one thing in common: they know why they get up in the morning. - Unknown",
+  "Perseverance is the key to success. - Paramahansa Yogananda",
+  "The true measure of a man is not how he behaves in moments of comfort and convenience, but how he stands at times of controversy and challenges. - Martin Luther King Jr.",
+  "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+  "Don't look back, you're not going that way. - Unknown"
+  ];
+
+
 function afficherPhraseAleatoireBad() {
   const nombreAleatoire = Math.floor(Math.random() * listePhrasesBad.length);
   const phraseAleatoire = listePhrasesBad[nombreAleatoire];
