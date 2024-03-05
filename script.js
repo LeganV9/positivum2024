@@ -1,26 +1,26 @@
 function afficherPhraseAleatoireBad() {
   const nombreAleatoireBad = Math.floor(Math.random() * listePhrasesBad.length);
   const phraseAleatoireBad = listePhrasesBad[nombreAleatoireBad];
+    // Affichez la phrase aléatoire Bad
+      alert(phraseAleatoireBad);
+      };
+
 
 function afficherPhraseAleatoireNeutral() {
   const nombreAleatoireNeutral = Math.floor(Math.random() * listePhrasesNeutral.length);
   const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoireNeutral];
+    // Affichez la phrase aléatoire Neutral
+      alert(phraseAleatoireNeutral);
+      };
+
 
 function afficherPhraseAleatoirePositive() {
   const nombreAleatoirePositive = Math.floor(Math.random() * listePhrasesPositive.length);
   const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoirePositive];
+    // Affichez la phrase aléatoire Positive
+      alert(phraseAleatoirePositive);
+      };
 
-  // Affichez la phrase aléatoire Bad
-  alert(phraseAleatoireBad);
-};
-
-// Affichez la phrase aléatoire Neutral
-  alert(phraseAleatoireNeutral);
-};
-
-// Affichez la phrase aléatoire Positive
-  alert(phraseAleatoirePositive);
-};
 
 const listePhrasesBad = [
   "Challenges are what make life interesting. Overcoming them is what makes life meaningful. - Joshua J. Marine",
