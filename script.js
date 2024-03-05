@@ -1,25 +1,28 @@
 function afficherPhraseAleatoireBad() {
   const nombreAleatoireBad = Math.floor(Math.random() * listePhrasesBad.length);
   const phraseAleatoireBad = listePhrasesBad[nombreAleatoireBad];
-    // Affichez la phrase aléatoire Bad
-      alert(phraseAleatoireBad);
-      };
+      // Return the generated phrase
+        return phraseAleatoireBad;
+        }
+
 
 
 function afficherPhraseAleatoireNeutral() {
   const nombreAleatoireNeutral = Math.floor(Math.random() * listePhrasesNeutral.length);
   const phraseAleatoireNeutral = listePhrasesNeutral[nombreAleatoireNeutral];
-    // Affichez la phrase aléatoire Neutral
-      alert(phraseAleatoireNeutral);
-      };
+      // Return the generated phrase
+        return phraseAleatoireNeutral;
+        }
+
 
 
 function afficherPhraseAleatoirePositive() {
   const nombreAleatoirePositive = Math.floor(Math.random() * listePhrasesPositive.length);
   const phraseAleatoirePositive = listePhrasesPositive[nombreAleatoirePositive];
-    // Affichez la phrase aléatoire Positive
-      alert(phraseAleatoirePositive);
-      };
+      // Return the generated phrase
+        return phraseAleatoirePositive;
+        }
+
 
 
 const listePhrasesBad = [
