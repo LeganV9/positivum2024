@@ -61,9 +61,21 @@ const listePhrasesPositive = [
   "Success is the key to happiness. If you love what you are doing, you will be successful. - Albert Schweitzer"
 ];
 
+
 // Utiliser fetch pour charger le contenu de header.html
 fetch('header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('headerContainer').innerHTML = data;
   });
+
+
+function afficherCitation(phrase) {
+  // Cacher le texte descriptif
+  document.querySelector('.bodytext').classList.add('hidden');
+  // Remplacer le contenu de la citation
+  document.getElementById('phrase').innerHTML = phrase;
+  // Afficher la citation
+  document.getElementById('phrase').classList.remove('hidden');
+  };
+
